@@ -1,0 +1,82 @@
+html, .container {
+    height: 100%;
+    color: white;
+}
+
+body {
+	height: 100%;
+	/*font-family: "Open Sans", sans-serif;*/
+	font-family: sans-serif;
+    -webkit-transition: background 300ms ease-in 200ms; /* property duration timing-function delay */
+    -moz-transition: background 300ms ease-in 200ms;
+    -o-transition: background 300ms ease-in 200ms;
+    transition: background 300ms ease-in 200ms;
+    background-color: black;
+}
+
+.container {
+    display: table;
+    vertical-align: middle;
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h3 {
+	color: white;
+	font-weight: 800;
+	text-shadow: #000 0 0 1px;
+}
+
+h3 span {
+	background: rgba(152,193,233,0.7);
+}
+
+p {
+	font-weight: 600;
+	text-shadow: #000 0 0 1px;
+}
+
+.entrada_usuarios input[type="text"], .entrada_usuarios input[type="password"], .entrada_usuarios input[type="submit"] {
+	width: 300px;
+	padding: 3px 7px;
+	border: none;
+	font-size: 18px;
+	color: black;
+	font-weight: 300;
+}
+
+.entrada_usuarios input[type="submit"] {
+	text-align: center;
+	padding: 5px 20px;
+	background-color: #5184ba;
+	border: none;
+	font-size: 14px;
+	color: white;
+}
+
+.ayuda {
+	position: absolute;
+	color: white;
+	bottom: 15px;
+	right: 15px;
+	text-align: right;
+	text-shadow: #000 0 0 1px;
+}
+
+.ayuda a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+
+.ayuda a:hover {
+	background-color: #5184ba;
+}
+
+.error {
+	background-color: #883936;
+	padding: 5px 20px;
+}
