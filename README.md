@@ -15,6 +15,8 @@ fonts = (fuentes para bootstrap)
 
 img = (imagenes extras del carrusel de fondo)
 
+extras = (carpeta con HTMLs extras, como informacion al usuario)
+
 js = (javascript de bootstrap)
 
 WEB-INF = templates = (html con JSTL)
