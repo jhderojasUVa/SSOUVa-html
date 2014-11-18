@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/uva.css">
+	<title>Universidad de Valladolid - SSO</title>
+	<style>
+	body {
+		background-image: url(../img/default.jpg);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center center;
+	}
+	</style>
+	<script>
+	$(document).ready(function() {
+		document.cookie = "isotrol_sso_cookie=;path=/;domain=uva.es;expires=Thu, 01-Jan-1970 00:00:01 GMT";
+		window.setInterval(function(){
+				cambiafondo();
+			}, 9000);
+	});
+	
+	function cambiafondo() {
+		num = Math.floor((Math.random()*5)+1);
+		$("body").css(
+				{
+				"background-image": "url(../img/"+num+".jpg)",
+				"-webkit-background-size": "cover",
+				"-moz-background-size": "cover",
+				"-o-background-size": "cover",
+				"background-size": "cover",
+				"background-repeat": "no-repeat",
+				"background-attachment": "fixed",
+				"background-position": "center center"
+				});
+	}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row vertical-center-row" >
+			<div class="col-md-12">
+				<h3 class="text-center"><span>Autentificaci&oacute;n de usuarios UVa</span></h3>
+				<p class="text-center texto_azul">Acceso a la intranet de la Universidad de Valladolid</p>
+				<#if sso_error??><p class="text-center"><span class="error"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Ha habido un problema: ${sso_error}</span></p></#if>
+				<#if sso_agent?? && sso_return??>
+				<div class="row">
+	                <div class="col-xs-4 col-xs-offset-4" style="text-align: center;">
+				        <form class="entrada_usuarios" action="login.action" method="post" name="formulario_login">
+				        	<input type="hidden" name="sso_agent" value="${sso_agent}" />
+                            <input type="hidden" name="sso_return" value="${sso_return}" />
+							<p><input type="text" id="sso_user" name="sso_user" placeholder="usuario" style="border-bottom: 1px solid #e8e8e8;"><br/>
+							<input type="password" id="sso_pass" name="sso_pass" placeholder="clave"></p>
+							<p><input type="submit" value="Entrar"></p>
+						</form>
+	                </div>
+	            </div>
+	            <#else>
+	            	<#if !sso_error??><p class="text-center"><span class="error"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> Lo sentimos, hay un error con la autentificaci&oacute;n. Por favor, pruebe m&aacute;s tarde.</span></p></#if>
+	            </#if>
+			</div>
+		</div>
+	</div>
+	<div class="ayuda">
+		<a href="http://www.uva.es"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <a href="http://stic.uva.es/export/sites/stic/01.miidentidad/1.1.directoriocorporativo/index.html" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Ayuda</a> <a href="mailto:soporte@uva.es?subject=Problemas%20con%20la%20entrada%20en%20el%20SSO%20UVa"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> soporte@uva.es</a>
+	</div>
+</body>
+</html>
