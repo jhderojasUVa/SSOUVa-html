@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:800,400,300" rel="stylesheet" type="text/css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<title>Universidad de Valladolid - SSO</title>
+	<style>
+		body {
+			background-image: url(../img/default.jpg);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+		
+		.row {
+			background-color: rgba(255,255,255,0.8);
+		}
+		
+		.cabecera {
+			
+		}
+		
+		.menu {
+			padding: 25px;
+		}
+		
+		.footer {
+			margin-right: 20px;
+		}
+		
+		.footer a {
+			padding: 5px 15px;
+		}
+		
+		.footer a:hover {
+			background-color: #5184ba;
+			color: white;
+			text-decoration: none;
+		}
+		
+		h1 {
+			font-size: 26px;
+			margin: 0;
+			text-shadow: #000 0 0 1px;
+			color: #883936;
+		}
+		
+		h3 {
+			color: #5184ba;
+		}
+		
+		hr {
+			margin-bottom: 3px;
+			margin-top: 3px;
+			color: grey;
+			border: 3px solid grey;
+		}
+		
+		ul.cuadrado li {
+			list-style-type: square;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-cs-12">
+			<h1>
+				<img src="http://www.uva.es/export/system/modules/es.uva.web.portal.opencms.v85.template/resources/images/logo_uva_small.jpg" alt="Universidad de Valladolid" />
+				 <strong>Universidad</strong> de <strong>Valladolid</strong>
+			</h1>
+			<hr />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-cs-12 col-md-2">
+			<div class="menu">
+				<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+					    Menu
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#pasado">Que ha pasado</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#funciona">Como funciona</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#phising">Problemas</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#contacto">Contacto</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+		<div class="col-cs-12 col-md-10">
+			<a name="pasado"></a>
+			<h3>&iquest;Qu&eacute; ha pasado?</h3>
+			<p>Con el redise&ntilde;o, este a&ntilde;o de <a href="http://miportal.uva.es" title="Mi Portal UVa">Mi Portal UVa</a>, la anterior entrada a dicho servicio se quedaba desfasada, por eso, se ha realizado un redise&ntilde;o de dicha entrada.</p>
+			<p>El d&iacute;a 17 de noviembre de 2014 se procedi&oacute; a publicar una acutalizaci&oacute;n de dicha entrada de uso com&uacute;n para todas las aplicaciones que requieren entrada &uacute;nica a los servicios de la Universidad de Valladolid.</p>
+			<a name="funciona"></a>
+			<h3>&iquest;Como funciona?</h3>
+			<p>La nueva entrada a <a href="http://miportal.uva.es" title="Mi Portal UVa">Mi Portal UVa</a> funciona exactamente igual que la anterior versi&oacute;n. Usted deber&aacute; introducir su identificador y clave para acceder a <a href="http://miportal.uva.es" title="Mi Portal UVa">Mi Portal UVa</a> y por lo tanto a la intranet de la Universidad de Valladolid.</p>
+			<p>Los accesos a trav&eacute;s de aplicaciones de terceros tambi&eacute;n mostraran este nuevo formato de entrada.</p>
+			<h3>&iquest;Por que el Portal del empleado no ha cambiado?</h3>
+			<p>La entrada al <a href="https://miportaldeservicios.uva.es/">Portal del empleado UVa</a>, no usa el mismo motor que el de <a href="http://miportal.uva.es" title="Mi Portal UVa">Mi Portal UVa</a> y por eso, su aspecto no ha variado.</p>
+			<p>Por esta raz&oacute;n la entrada al <a href="https://miportaldeservicios.uva.es/">Portal del empleado</a> conservar&aacute; el viejo aspecto.</p>
+			<a name="phising"></a>
+			<h3>No lo tengo claro, no se si es phising</h3>
+			<p>El phising o robo de identidad se realiza cuando se introducen datos personales en p&aacute;ginas que realizan la captura de datos. Si usted cree que la p&aacute;gina de <a href="http://miportal.uva.es" title="Mi Portal UVa">Mi Portal UVa</a> donde esta introduciendo sus credenciales puede resultar fraudulenta, por favor, p&oacute;ngase en contacto con <a href="mailto:soporte-web@uva.es">soporte-web@uva.es</a> a fin de consultarlo.
+			<p>Recuerda que la URL de su navegador deber&aacute; contener el dominio *.uva.es tanto para entrar a Mi Portal del Empleado como para entrar a Mi Portal UVa.</p>
+			<p>Las URLs en su navegador ser&aacute;n de la forma:</p>
+			<ul class="cuadrado">
+				<li><strong>Mi Portal del Empleado</strong>: https://uxxi-sso.<strong>uva.es</strong>/sso/pages/loginUVa.jsp.</li>
+				<li><strong>Mi Portal UVa</strong>: https://sso.<strong>uva.es</strong>/isso/isso/...</li>
+			</ul>
+			<p>Desconf&iacute;e si las URLs de su navegador son otras diferentes.</p>
+			<a name="contacto"></a>
+			<h3>Contacto</h3>
+			<p>Para cualquier duda, p&oacute;ngase en contacto con <a href="mailto:soporte-web@uva.es">soporte-web@uva.es</a> o a la extensi&oacute;n 4771.
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-cs-12">
+		<div class="footer">
+			<p class="text-right">
+				<a href="http://www.uva.es"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <a href="http://stic.uva.es/export/sites/stic/01.miidentidad/1.1.directoriocorporativo/index.html" target="_blank"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Ayuda</a> <a href="mailto:soporte@uva.es?subject=Problemas%20con%20la%20entrada%20en%20el%20SSO%20UVa"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> soporte@uva.es</a>
+			</p>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>
