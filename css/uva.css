@@ -38,12 +38,17 @@ h3 span {
 
 p {
 	font-weight: 600;
-	text-shadow: #000 0 0 1px;
 }
 
 .texto_azul {
 	color: #284564;
 }
+
+.fondo_blanco {
+	
+	background-color: rgba(255,255,255,0.7);
+}
+
 
 .entrada_usuarios input[type="text"], .entrada_usuarios input[type="password"], .entrada_usuarios input[type="submit"] {
 	width: 300px;
