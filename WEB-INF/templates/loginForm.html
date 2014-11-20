@@ -67,7 +67,7 @@
 			<div class="col-md-12">
 				<h3 class="text-center"><span>Autentificaci&oacute;n de usuarios UVa</span></h3>
 				<p class="text-center texto_azul"><span class="fondo_blanco">Acceso a los servicios de la Universidad de Valladolid</span></p>
-				<#if sso_error??><p class="text-center"><span class="error"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Ha habido un problema: ${sso_error}</span></p></#if>
+				<#if sso_error??><p class="text-center"><span class="error"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Ha habido un problema: ${sso_error}</span></p><p class="text-center"><span class="boton"><a href="javascript:window.history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Volver a la autentificaci&oacute;n</a></span></#if>
 				<#if sso_agent?? && sso_return??>
 				<div class="row">
 	                <div class="col-xs-12 col-sm-4 col-sm-offset-4" style="text-align: center;">
@@ -82,7 +82,7 @@
 	            </div>
 	            	 <p class="text-center"><span class="fondo_blanco"><a href="/isso/extras/index.html" title="Informacion" target="_blank">Informaci&oacute;n sobre el nuevo formato</a></span></p>
 	            <#else>
-	            	<#if !sso_error??><p class="text-center"><span class="error"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> Lo sentimos, hay un error con la autentificaci&oacute;n. Por favor, pruebe m&aacute;s tarde.</span></p></#if>
+	            	<#if !sso_error??><p class="text-center"><span class="error"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> Lo sentimos, hay un error con la autentificaci&oacute;n. Por favor, pruebe m&aacute;s tarde.</span></p><p class="text-center"><span class="boton"><a href="javascript:window.history.back()"><span class="glyphicon glyphicon-arrow-left"></span> Volver a la autentificaci&oacute;n</a></span></#if>
 	            </#if>
 			</div>
 		</div>
