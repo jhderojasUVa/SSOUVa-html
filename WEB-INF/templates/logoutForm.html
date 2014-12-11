@@ -59,6 +59,7 @@ function cambiafondo() {
 		<div class="row vertical-center-row" >
 			<div class="col-md-12">
 				<h3 class="text-center"><span>Autentificaci&oacute;n de usuarios UVa</span></h3>
+				<#if sso_user?? && sso_agent?? && sso_return?? && sso_id??>
 				<p class="text-center texto_azul"><span class="fondo_blanco">Confirme el cierre de sesi&oacute;n: <strong>${sso_user}</strong></span></p>
 				<div class="row">
 	                <div class="col-xs-4 col-xs-offset-4" style="text-align: center;">
@@ -71,6 +72,9 @@ function cambiafondo() {
 						</form>
 	                </div>
 	            </div>
+	            <#else>
+					<p class="text-center texto_azul"><span class="fondo_blanco">Error desconocido</span></p>
+				</#if>
 			</div>
 		</div>
 	</div>
